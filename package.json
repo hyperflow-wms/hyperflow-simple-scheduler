@@ -1,0 +1,36 @@
+{
+  "name": "@hyperflow/demo-scheduler-plugin",
+  "version": "0.1.0",
+  "description": "Demo scheduler plugin for HyperFlow",
+  "main": "./dist/main.js",
+  "scripts": {
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyperflow-wms/hyperflow-scheduler.git"
+  },
+  "keywords": [
+    "hyperflow",
+    "wms",
+    "workflow",
+    "scheduler"
+  ],
+  "author": "Bartosz Baliś <balis@agh.edu.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyperflow-wms/hyperflow-scheduler/issues"
+  },
+  "homepage": "https://github.com/hyperflow-wms/hyperflow-scheduler",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "src/*",
+    "dist/**/*.js",
+    "dist/**/*.js.map"
+  ]
+}
