@@ -1,5 +1,5 @@
 {
-  "name": "@hyperflow/demo-scheduler-plugin",
+  "name": "@hyperflow/simple-scheduler-plugin",
   "version": "0.1.0",
   "description": "Demo scheduler plugin for HyperFlow",
   "main": "./dist/main.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyperflow-wms/hyperflow-scheduler.git"
+    "url": "git+https://github.com/hyperflow-wms/hyperflow-simple-scheduler.git"
   },
   "keywords": [
     "hyperflow",
@@ -19,9 +19,9 @@
   "author": "Bartosz Baliś <balis@agh.edu.pl>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyperflow-wms/hyperflow-scheduler/issues"
+    "url": "https://github.com/hyperflow-wms/hyperflow-simple-scheduler/issues"
   },
-  "homepage": "https://github.com/hyperflow-wms/hyperflow-scheduler",
+  "homepage": "https://github.com/hyperflow-wms/hyperflow-simple-scheduler",
   "dependencies": {
   },
   "devDependencies": {
