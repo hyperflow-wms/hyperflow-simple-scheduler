@@ -63,14 +63,15 @@ class SimpleScheduler {
      * }
      * where: 
      * - 'ins', 'outs', 'context' and 'cb' are parameters of the task 
-     * function from which 'addJobItem' has been called.
+     * function from which 'addTaskItem' has been called.
      * 
-     * @param taskFunctionCb is a function '(taskArray) => taskFunction(taskArray, node)'
-     * to be called asynchronously by the scheduler to execute the tasks
-     * passed as 'taskArray', where: 
-     * - each item in the 'taskArray' is a 'taskItem' 
-     * - 'node' is the name of the node assigned by the scheduler for the task (group)
-     * Example of such function is 'k8sCommandGroup':
+     * @param {(taskArray, node)} taskFunctionCb - a callback function to be called 
+     * by the scheduler to execute the task(s) passed as 'taskArray'. 
+     * The parameters are:
+     * - @param taskArray - an array of 'taskItem' objects
+     * - @param node - is the name of the node assigned by the scheduler for the task (group)
+     * 
+     * Example of such function (without the 'node' parameter) is 'k8sCommandGroup':
      * https://github.com/hyperflow-wms/hyperflow/blob/56f1f6e041e79b270753f66c0c07dd04bf7d00c5/functions/kubernetes/k8sCommand.js#L22
      * 
      * Allowing task arrays enables the scheduler to agglomerate tasks
